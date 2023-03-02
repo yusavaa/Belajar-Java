@@ -20,7 +20,8 @@ public class ATM {
     }
 
     static void menu() {
-
+        
+        System.out.println();
         System.out.print("Masukkan pilihan: ");
         String menu = input.nextLine();
 
