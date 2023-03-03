@@ -21,6 +21,7 @@ public class ATM {
         
     }
 
+
     static void display() {
         System.out.println("Anjungan Tunai Mandiri");
         System.out.println("======================");
@@ -35,8 +36,8 @@ public class ATM {
         }
     }
 
-    static void menu() {
 
+    static void menu() {
         System.out.println();
         System.out.print("Masukkan pilihan: ");
         String menu = input.nextLine();
@@ -60,10 +61,12 @@ public class ATM {
         }
     }
 
+
     static void saldo() {
         System.out.println("Saldo anda Rp." + saldo);
     }
 
+    
     static void deposit() {
         System.out.print("Jumlah deposit: Rp.");
         int deposit = input.nextInt();
@@ -74,9 +77,9 @@ public class ATM {
         } else {
             System.out.println("Minimal deposit Rp.1");
         }
-
         input.nextLine();
     }
+
 
     static void transfer() {
         System.out.print("Nomor rekening tujuan: ");
@@ -99,5 +102,4 @@ public class ATM {
             System.out.println("Minimum transfer Rp.1");
         }
     }
-
 }
