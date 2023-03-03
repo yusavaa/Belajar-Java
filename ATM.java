@@ -6,11 +6,27 @@ public class ATM {
 
     public static void main(String[] args) {
 
+        for (int i = 3; i > 0; i--) {
+            System.out.print("Masukkan Pin: ");
+            String pin = input.nextLine();
+
+            if (pin.equals("123456")) {
+                System.out.println();
+                display();
+            } else {
+                System.out.println("Pin yang anda masukkan salah, sisa kesempatan "+ i +" lagi.");
+            }
+        }
+        System.out.println("Blocked.");
+        
+    }
+
+    static void display() {
         System.out.println("Anjungan Tunai Mandiri");
         System.out.println("======================");
         System.out.println("1. Cek saldo");
-        System.out.println("2. Deposit");
-        System.out.println("3. Tranfer");
+        System.out.println("2. Deposito");
+        System.out.println("3. Kirim saldo");
         System.out.println("4. Selesai");
         System.out.println("======================");
 
@@ -20,7 +36,7 @@ public class ATM {
     }
 
     static void menu() {
-        
+
         System.out.println();
         System.out.print("Masukkan pilihan: ");
         String menu = input.nextLine();
