@@ -6,7 +6,7 @@ public class ATM {
 
     public static void main(String[] args) {
 
-        for (int i = 3; i > 0; i--) {
+        for (int i = 2; i >= 0; i--) {
             System.out.print("Masukkan Pin: ");
             String pin = input.nextLine();
 
