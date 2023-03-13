@@ -19,6 +19,15 @@ public class Game {
     static Item excalibur = new Item("Excalibur", 20, 0);
     static Item ironArmor = new Item("Iron Armor", 0, 20);
 
+    /*
+     * Method for Hero
+     * takeItem(item name) -> taking item and increase Hero base status
+     * 
+     * Method for Hero and Enemy
+     * display(object name) -> display status of object
+     * attack(enemy name) -> dealing damage to target enemy
+     */
+    
     public static void main(String[] args) {
         hero.takeItem(excalibur);
         hero.takeItem(ironArmor);
@@ -28,14 +37,5 @@ public class Game {
         org.attack(hero);
         hero.attack(org);
     }
-
-    /*
-     * Method for Hero
-     * takeItem(item name) -> taking item and increase Hero base status
-     * 
-     * Method for Hero and Enemy
-     * display(object name) -> display status of object
-     * attack(enemy name) -> dealing damage to target enemy
-     */
 
 }
